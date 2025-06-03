@@ -1,0 +1,183 @@
+:root {
+  /* Cores base - tema escuro (padrão) */
+  --main-bg: #2c5364;
+  --secondary-bg: #203a43;
+  --card-bg: #0e1d23;
+  --accent: #06d6a0;
+  --text-light: #fff;
+  --text-dark: #333;
+  
+  /* Cores da tabela - tema escuro */
+  --table-bg: #212529;
+  --table-text: #fff;
+  --table-stripe: #2c3034;
+  --table-hover: #343a40;
+  
+  /* Cores dos badges - tema escuro */
+  --badge-success: #28a745;
+  --badge-warning: #ffc107;
+  --badge-text: #212529;
+}
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Corrija as classes da tabela */
+.table-custom {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-custom thead {
+  background-color: var(--secondary-bg) !important;
+  color: var(--text-light) !important;
+}
+
+.table-custom tbody tr {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+}
+
+.table-custom tbody tr:nth-of-type(odd) {
+  background-color: var(--table-stripe) !important;
+}
+
+.table-custom tbody tr:hover {
+  background-color: var(--table-hover) !important;
+}
+
+/* Ajustes para o tema claro */
+.light-mode {
+  /* Cores base - tema claro */
+  --main-bg: #f0f2f5;
+  --secondary-bg: #d1d7dc;
+  --card-bg: #ffffff;
+  --text-light: #333;
+  
+  /* Cores da tabela - tema claro */
+  --table-bg: #ffffff;
+  --table-text: #212529;
+  --table-stripe: #f8f9fa;
+  --table-hover: #e9ecef;
+}
+
+.light-mode .table-custom,
+.light-mode .table-custom thead,
+.light-mode .table-custom tbody tr,
+.light-mode .table-custom tbody tr:nth-of-type(odd) {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+}
+
+.light-mode .table-custom thead {
+  background-color: var(--secondary-bg) !important;
+}
+
+.light-mode .table-custom tbody tr:hover {
+  background-color: var(--table-hover) !important;
+}
+
+/* Garanta que o texto do cabeçalho seja legível em ambos os temas */
+.light-mode .table-custom thead {
+  color: var(--text-dark) !important;
+}
+/* Classes base - tema escuro */
+.bg-main      { background-color: var(--main-bg) !important; }
+.bg-secondary { background-color: var(--secondary-bg) !important; }
+.bg-card      { background-color: var(--card-bg) !important; }
+.bg-accent    { background-color: var(--accent) !important; }
+.text-accent  { color: var(--accent) !important; }
+.text-main    { color: var(--main-bg) !important; }
+.text-light   { color: var(--text-light) !important; }
+
+/* Estilos da tabela - tema escuro */
+.table-custom {
+  background-color: #2c5364 !important;
+  color: var(--table-text) !important;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-custom thead {
+  background-color: var(--secondary-bg) !important;
+}
+
+.table-custom tbody tr {
+  background-color: var(--table-bg) !important;
+}
+
+.table-custom tbody tr:nth-of-type(odd) {
+  background-color: var(--table-stripe) !important;
+}
+
+.table-custom tbody tr:hover {
+  background-color: var(--table-hover) !important;
+}
+
+/* Estilos dos badges - tema escuro */
+.badge-devolvido {
+  background-color: var(--badge-success) !important;
+  color: var(--text-light) !important;
+}
+
+.badge-pendente {
+  background-color: var(--badge-warning) !important;
+  color: var(--badge-text) !important;
+}
+
+/* Botões */
+.btn-accent {
+  background-color: var(--accent) !important;
+  color: var(--main-bg) !important;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #04b485 !important;
+  color: var(--text-light) !important;
+}
+
+.border-accent { border-color: var(--accent) !important; }
+
+/* Card e sombras */
+.shadow-card {
+  box-shadow: 0 2px 18px #0f2027cc !important;
+}
+
+.card-custom {
+  background-color: var(--card-bg) !important;
+  color: var(--text-light) !important;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+/* Tema claro */
+.light-mode {
+  /* Cores base - tema claro */
+  --main-bg: #f0f2f5;
+  --secondary-bg: #b0b0b0;
+  --card-bg: #ffffff;
+  --text-light: #333;
+  
+  /* Cores da tabela - tema claro */
+  --table-bg: #676767;
+  --table-text: #212529;
+  --table-stripe: #303030;
+  --table-hover: #00376f;
+  
+  /* Cores dos badges - tema claro */
+  --badge-success: #28a745;
+  --badge-warning: #ffc107;
+  --badge-text: #212529;
+}
+
+/* Ajustes específicos para o tema claro */
+.light-mode .card-custom {
+  color: var(--text-dark) !important;
+}
+
+.light-mode .text-light {
+  color: var(--text-dark) !important;
+}
