@@ -1,7 +1,7 @@
-🎮 GameLibrary – Sistema Web para Locadora de Jogos
+ #🎮 GameLibrary – Sistema Web para Locadora de Jogos
 Este projeto foi desenvolvido individualmente para uma aula prática de PHP, no âmbito do curso Técnico Especialista de Gestão e Programação de Sistemas Informáticos – 2º ano.
 
-🎯 Objetivo
+ ##🎯 Objetivo
 O objetivo deste trabalho foi criar uma aplicação web para gestão de uma locadora de jogos, permitindo o cadastro, consulta e controle de alugueres de jogos de forma simples e eficiente.
 O foco esteve na aplicação dos conceitos de desenvolvimento web com PHP, integração com bases de dados MySQL e boas práticas de organização de código.
 
